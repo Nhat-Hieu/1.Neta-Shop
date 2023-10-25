@@ -1,0 +1,167 @@
+/* Đặt các biến màu sắc */
+:root {
+    --primary-color: #1792e4;
+    --text-color: #353a40;
+    --background-color: #353a40;
+    --white-color: #fff;
+    --pink-color: #660033;
+}
+
+*{
+    padding-top: 0.04%;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .brand {
+    line-height: 50px;
+    padding: 0 10px;
+    color: var(--white-color);
+    font-size: 17px;
+}
+
+nav.menu {
+    display: flex;
+}
+
+nav.menu ul{
+    list-style: none;
+}
+
+nav.menu ul li{
+    cursor: pointer; /* Con trỏ chuột */
+    display: inline-flex;
+    line-height: 40px;
+    padding: 0 5px;
+    font-size: 17px;
+    margin-right: 10px;
+    color: var(--white-color);
+}
+
+nav.menu ul li:hover,
+nav.menu ul li.active {
+    color: var(--white-color);
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section {
+    width: 20%;
+    padding-left: 1px;
+    padding-top: 10px;
+}
+
+.left-section h1 {
+    font-size: 30px; 
+    letter-spacing: 0.5px;
+    margin-bottom: 20px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    max-height: 50px;
+    overflow-y: auto;
+}
+
+table td {
+    border: 1px solid #dedede;
+    padding: 5px;
+    text-align: left;
+    color: var(--primary-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển động */
+}
+
+table td:hover {
+    background-color: var(--pink-color);
+    color: var(--white-color);
+}
+
+.right-section {
+    width: 70%;
+}
+
+img{
+    width: 1010px;
+    height: 220px;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.product {
+    width: 32%; 
+    padding: 10px;
+    box-sizing: border-box; 
+    border: 1px solid #dedede; 
+    margin-bottom: 20px; 
+}
+
+.product-image {
+    position: relative;
+    text-align: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-image img:hover {
+    transform: scale(1.2); 
+}
+
+.product-description {
+    padding: 10px;
+    border-top: 1px solid #dedede;
+}
+
+h2{
+    color: var(--pink-color);
+}
+
+.product-rating {
+    padding: 10px;
+    border-top: 1px solid #dedede;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 50px;
+    background: var(--background-color);
+    position: relative;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-text {
+    color: var(--white-color);
+}
+
